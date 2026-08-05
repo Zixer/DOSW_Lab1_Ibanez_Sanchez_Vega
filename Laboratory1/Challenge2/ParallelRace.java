@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class ParallelRace {
-    
+
     public static int findMax(List<Integer> numbers) {
         return numbers.stream().max(Integer::compare).orElse(0);
     }
@@ -19,6 +19,9 @@ public class ParallelRace {
         int min = findMin(numbers);
         long count = countElements(numbers);
         String multipleCheck = (max % 2 == 0) ? "Multiple of 2" : "Not a multiple of 2";
+        String oddCheck = (count % 2 != 0) ? "Size is Odd" : "Size is Even";
+        System.out.println("Max check: " + multipleCheck);
+        System.out.println("List size check: " + oddCheck);
         return new Result(max, min, count);
     }
 
@@ -27,6 +30,6 @@ public class ParallelRace {
         System.out.println("Max value: " + findMax(sample));
         System.out.println("Min value: " + findMin(sample));
         System.out.println("Total elements: " + countElements(sample));
+        Result res = combinada(sample);
     }
-
 }
