@@ -2,7 +2,7 @@
 
 ### Evidence
 
-![Challenge evidence](images/evidence1.png)
+![Challenge evidence](../../images/evidence1.png)
 
 ### Description
 
