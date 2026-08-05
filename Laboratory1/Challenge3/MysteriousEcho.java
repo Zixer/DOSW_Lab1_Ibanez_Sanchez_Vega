@@ -1,21 +1,30 @@
-public class ReverseMessageMisEcho {
+import java.util.stream.Stream;
 
-    /**
-     * Receives a String and returns it reversed.
-     *
-     * @param message Message to reverse.
-     * @return Reversed message.
-     */
+public class MessageBuilder {
+
+    public static String repeatMessage(String message) {
+        StringBuilder builder = new StringBuilder();
+
+        Stream.generate(() -> message).limit(3).forEach(text -> {
+                    if (builder.length() > 0) {
+                        builder.append(" ");
+                    }
+
+                    builder.append(text);
+                });
+
+        return builder.toString();
+    }
+
     public static String reverseMessage(String message) {
         StringBuffer buffer = new StringBuffer(message);
+
         return buffer.reverse().toString();
     }
 
     public static String mysteriousEcho(String message) {
-        StringBuffer buffer = new StringBuffer(message);
-        return buffer.reverse().toString();
-    }
+        String repeatedMessage = repeatMessage(message);
 
-    public static void main(String[] args) {
+        return reverseMessage(repeatedMessage);
     }
 }
