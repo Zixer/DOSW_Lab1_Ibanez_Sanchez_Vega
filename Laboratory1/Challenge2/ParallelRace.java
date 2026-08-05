@@ -18,6 +18,7 @@ public class ParallelRace {
         int max = findMax(numbers);
         int min = findMin(numbers);
         long count = countElements(numbers);
+        String multipleCheck = (max % 2 == 0) ? "Multiple of 2" : "Not a multiple of 2";
         return new Result(max, min, count);
     }
 
