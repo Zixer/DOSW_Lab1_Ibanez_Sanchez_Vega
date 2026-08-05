@@ -15,4 +15,10 @@ public class ParallelRace {
         System.out.println("Min value: " + findMin(sample));
         System.out.println("Total elements: " + countElements(sample));
     }
+
+    public static Result combinada(List<Integer> numbers) {
+        int min = findMin(numbers);
+        long count = countElements(numbers);
+        return new Result(0, min, count);
+    }
 }
