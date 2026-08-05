@@ -14,22 +14,28 @@ public class ParallelRace {
         return numbers.stream().count();
     }
 
-    public static Result combinada(List<Integer> numbers) {
-        int max = findMax(numbers);
-        int min = findMin(numbers);
-        long count = countElements(numbers);
-        String multipleCheck = (max % 2 == 0) ? "Multiple of 2" : "Not a multiple of 2";
-        String oddCheck = (count % 2 != 0) ? "Size is Odd" : "Size is Even";
-        System.out.println("Max check: " + multipleCheck);
-        System.out.println("List size check: " + oddCheck);
-        return new Result(max, min, count);
+    public static Result ambasListas(List<Integer> list1, List<Integer> list2) {
+        int max1 = findMax(list1);
+        int min1 = findMin(list1);
+        long count1 = countElements(list1);
+        
+        int max2 = findMax(list2);
+        int min2 = findMin(list2);
+        long count2 = countElements(list2);
+
+        String check1 = (max1 % 2 == 0) ? "Multiple/Divisor of 2" : "Not multiple/divisor of 2";
+        String sizeCheck1 = (count1 % 2 != 0) ? "Odd size" : "Even size";
+
+        System.out.println("Max: " + max1 + ", Min: " + min1 + ", Count: " + count1 + " | " + check1 + " | " + sizeCheck1);
+        System.out.println("Max 2: " + max2 + ", Min 2: " + min2 + ", Count 2: " + count2);
+
+        return new Result(max1, min1, count1);
     }
 
     public static void main(String[] args) {
-        List<Integer> sample = List.of(5, 12, 3, 20, 8);
-        System.out.println("Max value: " + findMax(sample));
-        System.out.println("Min value: " + findMin(sample));
-        System.out.println("Total elements: " + countElements(sample));
-        Result res = combinada(sample);
+        List<Integer> sample1 = List.of(5, 12, 3, 20, 8);
+        List<Integer> sample2 = List.of(2, 7, 14, 9);
+        
+        processBothLists(sample1, sample2);
     }
 }
