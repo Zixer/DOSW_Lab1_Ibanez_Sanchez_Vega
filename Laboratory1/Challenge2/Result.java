@@ -13,3 +13,4 @@ public class Result {
     public int getMin() { return min; }
     public long getCount() { return count; }
 }
+

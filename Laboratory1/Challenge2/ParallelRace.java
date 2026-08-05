@@ -6,13 +6,26 @@ public class ParallelRace {
         return numbers.stream().max(Integer::compare).orElse(0);
     }
 
+    public static int findMin(List<Integer> numbers) {
+        return numbers.stream().min(Integer::compare).orElse(0);
+    }
+
+    public static long countElements(List<Integer> numbers) {
+        return numbers.stream().count();
+    }
+
     public static Result combinada(List<Integer> numbers) {
         int max = findMax(numbers);
-        return new Result(max, 0, 0);
+        int min = findMin(numbers);
+        long count = countElements(numbers);
+        return new Result(max, min, count);
     }
 
     public static void main(String[] args) {
         List<Integer> sample = List.of(5, 12, 3, 20, 8);
         System.out.println("Max value: " + findMax(sample));
+        System.out.println("Min value: " + findMin(sample));
+        System.out.println("Total elements: " + countElements(sample));
     }
+
 }
