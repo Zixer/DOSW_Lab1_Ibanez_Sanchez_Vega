@@ -8,6 +8,7 @@ public class ParallelRace {
 
     public static Result combinada(List<Integer> numbers) {
         int max = findMax(numbers);
+        String multipleCheck = (max % 2 == 0) ? "Multiple of 2" : "Not a multiple of 2";
         return new Result(max, 0, 0);
     }
 
