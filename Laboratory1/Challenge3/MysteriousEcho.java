@@ -11,6 +11,11 @@ public class ReverseMessageMisEcho {
         return buffer.reverse().toString();
     }
 
+    public static String mysteriousEcho(String message) {
+        StringBuffer buffer = new StringBuffer(message);
+        return buffer.reverse().toString();
+    }
+
     public static void main(String[] args) {
     }
 }
