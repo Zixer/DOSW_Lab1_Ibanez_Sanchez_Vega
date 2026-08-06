@@ -16,6 +16,14 @@ Answers to the conceptual questionnaire:
     RTA// Git cannot automatically merge the changes and generates a merge conflict that must be resolved manually by choosing or combining the correct code.
 4. How can you display the branch and merge history graphically in the terminal?
     RTA//The command git log --oneline --graph --all --decorate displays the commit history, branches, and merges in a graphical format. This command was used during the laboratory to verify that the feature branches had been merged correctly and to visualize the branch history after resolving merge conflicts.
+5. How can you display the branch and merge history graphically in the terminal?
+    RTA//You can use the command git log --oneline --graph --all --decorate to display a graphical view of branches, commits, and merges.
+6. What is the difference between a commit and a push?
+    RTA//A commit saves changes in the local repository, while a push uploads those committed changes to the remote repository, such as GitHub.
+7. What are git stash and git stash pop used for?
+    RTA//git stash temporarily saves uncommitted changes, and git stash pop restores those changes so you can continue working later.
+8. What is the difference between HashMap and Hashtable?
+    RTA//HashMap is faster and allows null keys and values, while Hashtable is synchronized, does not allow null, and is mainly used when thread safety is needed.
 
 
 
