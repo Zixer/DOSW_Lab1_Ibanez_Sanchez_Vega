@@ -8,7 +8,7 @@ Yazid Alejandro Sánchez Sánchez - Daniel Santiago Ibáñez González - Sergio 
 
 ### Evidence
 
-![Challenge evidence](images/evidence1.png)
+![Challenge evidence](../images/evidence1.png)
 
 ### Description
 
@@ -27,7 +27,7 @@ Briefly explain:
 
 ### Evidence
 
-![Challenge evidence](images/evidence2.png)
+![Challenge evidence](../images/evidence2.png)
 
 ### Description
 
@@ -47,7 +47,7 @@ Briefly explain:
 
 ### Evidence
 
-![Challenge evidence](images/evidence3.png)
+![Challenge evidence](../images/evidence3.png)
 
 ### Description
 
@@ -67,7 +67,7 @@ Briefly explain:
 
 ### Evidence
 
-![Challenge evidence](images/evidence4.png)
+![Challenge evidence](../images/evidence4.png)
 
 ### Description
 
@@ -86,7 +86,7 @@ Briefly explain:
 
 ### Evidence
 
-![Challenge evidence](images/evidence5.png)
+![Challenge evidence](../images/evidence5.png)
 
 ### Description
 
@@ -107,7 +107,7 @@ Briefly explain:
 
 ### Evidence
 
-![Challenge evidence](images/evidence6.png)
+![Challenge evidence](../images/evidence6.png)
 
 ### Description
 
